@@ -1,0 +1,31 @@
+extends layout
+block content
+    div.container
+
+        header
+            h2= title
+            
+            h1 add offer
+            .container
+                form(action="../add/ok", method="post")
+                    .field
+                        label nameEvenement
+                        input(type='text', name='nameEvenement')
+                    .field
+                        label type
+                        input(type='text', name='type')
+                    .field
+                        label dateBegin
+                        input(type='text', name='dateBegin')
+                    .field
+                        label numberDay
+                        input(type='text', name='numberDay')
+                    .field
+                        label numberExtra
+                        input(type='text', name='numberExtra')
+                    .field
+                        label role
+                        input(type='text', name='role')
+                    input(type='submit')
+        .container
+        footer

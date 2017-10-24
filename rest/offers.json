@@ -1,0 +1,28 @@
+{
+    "offer": [
+        {
+        "nameEvenement": "Dysneyland Paris",
+        "type": "spectacle",
+        "dateBegin": "15/10/2017",
+        "numberDay": "20",
+        "numberExtra": "20",
+        "role":"Obelix"
+        },
+        {
+        "nameEvenement": "Harry Potter 8",
+        "type": "spectacle",
+        "dateBegin": "5/11/2017",
+        "numberDay": "18",
+        "numberExtra": "14",
+        "role":"professeur de poudlar"
+        },
+        {
+        "nameEvenement": "Star wars VIII",
+        "type": "film",
+        "dateBegin": "4/02/2018",
+        "numberDay": "95",
+        "numberExtra": "140",
+        "role":"jedai"
+        }
+    ]
+}

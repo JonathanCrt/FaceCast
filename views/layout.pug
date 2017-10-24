@@ -1,0 +1,51 @@
+doctype html
+html(lang='fr')  
+  head      
+    title= title     
+    meta(charset='utf-8')      
+    meta(name='viewport', content='width=device-width, initial-scale=1')      
+    link(rel='stylesheet', href='/assets/css/main.css') 
+
+
+    body  
+      div#header
+        div#top
+          div#logo
+            span(class='image avatar48')
+                img(src='images/avatar.jpg', alt='')
+
+            h1#title FaceCast
+            p un site NodeJS
+
+          nav#nav
+            ul
+                li
+                    a(href='/', id='top-link', class='icon fa-home') &nbsp;Home
+            ul
+                li
+                    a(href='/offer', id='offer-link', class='icon fa-list') &nbsp;List of offers
+            ul
+                li
+                    a(href='/users', id='users-link', class='icon fa-users') &nbsp;Users
+            ul
+                li
+                    a(href='/add', id='add-link', class='icon fa-plus') &nbsp;Add offer
+
+
+
+      block content   
+
+      div#footer       
+        ul.copyright              
+          li &copy; Untitled. All rights reserved.          
+          li Design:                  
+            a(href="http://html5up.net") HTML5 UP  
+
+
+
+      script(src='/assets/js/jquery.min.js')       
+      script(src='/assets/js/jquery.scrolly.min.js')      
+      script(src='/assets/js/jquery.scrollzer.min.js')        
+      script(src='/assets/js/skel.min.js')       
+      script(src='/assets/js/util.js')        
+      script(src='/assets/js/main.js')

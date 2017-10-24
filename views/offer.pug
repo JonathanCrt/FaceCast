@@ -1,0 +1,33 @@
+extends layout
+block content
+    div.container
+    
+        header
+            h2= title 
+        table
+            tr
+                th NameEvenement
+                th Type
+                th DateBegin
+                th NumberDay
+                th role
+                th NumberExtra
+            tr
+            each offerTab, i in offer
+                
+                    td
+                        =offerTab.nameEvenement
+                    td
+                        =offerTab.type
+                    td
+                        =offerTab.dateBegin
+                    td
+                        =offerTab.numberDay
+                    td
+                        =offerTab.role
+                    td
+                        =offerTab.numberExtra
+            
+        
+    .container
+        footer
