@@ -1,0 +1,28 @@
+extends layout
+block content
+    div#main
+            section(id='ListExtra', class='four')
+                div.container
+                    header
+                        h2= title 
+                        br
+                        
+                        table
+                            div.row
+                                div(class='6u 12u$(mobile)')
+                                    tr
+                                        th Last name
+                                        th First name
+                                        th Email
+                                div(class='6u 12u$(mobile)')
+                                    tr
+                                    each extraTab, i in extra
+                                        tr
+                                            td
+                                                =extraTab.last_name
+                                            td
+                                                =extraTab.first_name
+                                            td
+                                                =extraTab.email
+                    footer
+

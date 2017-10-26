@@ -14,10 +14,11 @@ var users = require('./routes/users');
 var offer = require('./routes/offer.js');
 var restapi = require('./rest/rest.js');
 var add = require('./routes/add.js');
+var extra = require('./routes/extra.js');
+var candidacy = require('./routes/candidacy.js');
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/faceCast');
-
 
 var app = express();
 app.locals.pretty = true;
@@ -53,6 +54,8 @@ app.use('/users', users);
 app.use('/rest', restapi);
 app.use('/offer', offer);
 app.use('/add', add);
+app.use('/extra', extra);
+app.use('/candidacy', candidacy);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

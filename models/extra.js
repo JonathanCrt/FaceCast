@@ -10,7 +10,7 @@ var extraSchema = Schema ({
 });
 
 
-var Extra = mongoose.model('Extra', extraSchema);
+var Extra = mongoose.model('Extra', extraSchema,'extras');
 
 // export le modèle
 module.exports = Extra;

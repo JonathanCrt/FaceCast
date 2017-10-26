@@ -8,8 +8,8 @@ router.get('/', function (req, res, next) {
   //here
   Offer.find(function (err, currentoffers) {
     if (err) throw err;
-      res.render('offer', { title: 'Liste des offres', offer: currentoffers });
-    //res.json(currentoffers);
+      res.render('offer', { title: 'List of offers', offer: currentoffers });
+      //res.json(currentoffers);
   });
 });
 

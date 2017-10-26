@@ -1,31 +1,35 @@
 extends layout
 block content
-    div.container
+        div#main
+            section(id='addOffer', class='four')
 
-        header
-            h2= title
-            
-            h1 add offer
-            .container
-                form(action="../add/ok", method="post")
-                    .field
-                        label nameEvenement
-                        input(type='text', name='nameEvenement')
-                    .field
-                        label type
-                        input(type='text', name='type')
-                    .field
-                        label dateBegin
-                        input(type='text', name='dateBegin')
-                    .field
-                        label numberDay
-                        input(type='text', name='numberDay')
-                    .field
-                        label numberExtra
-                        input(type='text', name='numberExtra')
-                    .field
-                        label role
-                        input(type='text', name='role')
-                    input(type='submit')
-        .container
-        footer
+                div.container
+                    header
+                        h2 Add offer : 
+                        br
+
+                        form(action="../add/ok", method="post")
+                            div.row
+                                div(class='6u 12u$(mobile)')
+                                    input(type='text', name='nameEvenement', placeholder='nameEvenement')
+                                div(class='6u 12u$(mobile)')
+                                    input(type='text', name='type', placeholder='type')
+
+                            div.row
+                                div(class='6u 12u$(mobile)')
+                                    input(type='date', name='dateBegin', placeholder='dateBegin')
+                                div(class='6u 12u$(mobile)')
+                                    input(type='number', name='numberDay', placeholder='numberDay')
+
+                            div.row
+                                div(class='6u 12u$(mobile)')
+                                    input(type='number', name='numberExtra', placeholder='numberExtra')
+                                div(class='6u 12u$(mobile)')
+                                    input(type='text', name='role', placeholder='role')
+                                div(class='12u$')                
+                                    input(type='submit')
+                    footer
+                .container
+
+
+

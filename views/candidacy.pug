@@ -1,7 +1,7 @@
 extends layout
 block content
     div#main
-            section(id='ListOffer', class='four')
+            section(id='ListCandidacy', class='four')
                 div.container
                     header
                         h2= title 
@@ -12,26 +12,22 @@ block content
                                 div(class='6u 12u$(mobile)')
                                     tr
                                         th NameEvenement
-                                        th Type
-                                        th DateBegin
-                                        th NumberDay
+                                        th Last name
+                                        th First name
                                         th role
-                                        th NumberExtra
+                                        th etat
                                 div(class='6u 12u$(mobile)')
                                     tr
-                                    each offerTab, i in offer
+                                    each candidacyTab, i in candidacy
                                         tr
                                             td
-                                                =offerTab.nameEvenement
+                                                =candidacyTab.offer.nameEvenement
                                             td
-                                                =offerTab.type
+                                                =candidacyTab.extra.last_name
                                             td
-                                                =offerTab.dateBegin
+                                                =candidacyTab.extra.first_name
                                             td
-                                                =offerTab.numberDay
+                                                =candidacyTab.offer.role
                                             td
-                                                =offerTab.role
-                                            td
-                                                =offerTab.numberExtra
+                                                =candidacyTab.etat
                     footer
-

@@ -5,8 +5,6 @@ var fs = require('fs');
 var Offer = require('../models/offer');
 
 
-
-
 router.post('/ok', function (req, res) {
     var newOffer = new Offer({
         nameEvenement: req.body.nameEvenement,
@@ -19,7 +17,7 @@ router.post('/ok', function (req, res) {
     newOffer.save(function (err) {
         if (err) {
 
-            res.send("ok!")
+            res.send("une erreur est survenue !")
         }
         else { res.redirect("/offer"); }
     });
