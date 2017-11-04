@@ -5,31 +5,34 @@ block content
 
                 div.container
                     header
-                        h2 Add offer : 
-                        br
-
+                        div.row
+                                div(class='8u 12u$(mobile)')
+                                    h2 Add offer : 
+                                    br
+                                div(class='4u 12u$(mobile)')
+                                    img(src='/images/sign-warning-icon.png' , id='error', class='image warning', alt='')
+                                    br 
                         form(action="../add/ok", method="post")
                             div.row
                                 div(class='6u 12u$(mobile)')
-                                    input(type='text', name='nameEvenement', placeholder='nameEvenement')
+                                    input(type='text', id='fname', name='nameEvenement', placeholder='nameEvenement')
                                 div(class='6u 12u$(mobile)')
-                                    input(type='text', name='type', placeholder='type')
+                                    input(type='text', id='ftype', name='type', placeholder='type')
 
                             div.row
                                 div(class='6u 12u$(mobile)')
-                                    input(type='date', name='dateBegin', placeholder='dateBegin')
+                                    input(type='date', id='fdate', name='dateBegin', placeholder='dateBegin')
                                 div(class='6u 12u$(mobile)')
-                                    input(type='number', name='numberDay', placeholder='numberDay')
+                                    input(type='number', id='fnumberDay', name='numberDay', placeholder='numberDay')
 
                             div.row
                                 div(class='6u 12u$(mobile)')
-                                    input(type='number', name='numberExtra', placeholder='numberExtra')
+                                    input(type='number', id='fnumberExtra', name='numberExtra', placeholder='numberExtra')
                                 div(class='6u 12u$(mobile)')
-                                    input(type='text', name='role', placeholder='role')
+                                    input(type='text', id='frole', name='role', placeholder='role')
                                 div(class='12u$')                
-                                    input(type='submit')
+                                    input(type='submit', id='btnSend')
                     footer
                 .container
-
 
 

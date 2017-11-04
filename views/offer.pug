@@ -17,6 +17,7 @@ block content
                                         th NumberDay
                                         th role
                                         th NumberExtra
+                                        th Delete
                                 div(class='6u 12u$(mobile)')
                                     tr
                                     each offerTab, i in offer
@@ -33,5 +34,7 @@ block content
                                                 =offerTab.role
                                             td
                                                 =offerTab.numberExtra
+                                            td
+                                                img(src='/images/Delete-icon.png' , id='deleteIcon', alt='')
                     footer
 

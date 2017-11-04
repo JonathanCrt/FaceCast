@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 var offerSchema = Schema({
     nameEvenement: String,
     type : String,
-    dateBegin: Date,
+    dateBegin: String,
     numberDay: Number,
     numberExtra: Number,
     role: String,

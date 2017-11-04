@@ -5,7 +5,8 @@ html(lang='fr')
         meta(charset='utf-8')      
         meta(name='viewport', content='width=device-width, initial-scale=1')      
         link(rel='stylesheet', href='/assets/css/main.css') 
-        <link rel="shortcut icon" href="/images/faceCast.png">
+        link(rel='shortcut icon', href='/images/faceCast.png')
+        link(rel='stylesheet', href='/assets/css/field.css')
 
 
         body  
@@ -15,7 +16,7 @@ html(lang='fr')
                         span(class='image avatar48')
                             img(src='/images/faceCast.png', alt='')
 
-                        h1#title FaceCast
+                        h1#title1 FaceCast
                         p NodeJS Website
 
                     nav#nav
@@ -47,9 +48,11 @@ html(lang='fr')
 
 
 
-            script(src='/assets/js/jquery.min.js')       
+            script(src='/assets/js/jquery.min.js')    
+            script(src='/assets/js/jquery-ui.min.js')    
             script(src='/assets/js/jquery.scrolly.min.js')      
             script(src='/assets/js/jquery.scrollzer.min.js')        
             script(src='/assets/js/skel.min.js')       
             script(src='/assets/js/util.js')        
             script(src='/assets/js/main.js')
+            script(src='/assets/js/field.js')
