@@ -9,7 +9,7 @@ var offerSchema = Schema({
     numberExtra: Number,
     role: String,
 
-});
+},{ collection: 'offers' });
 
 var Offer = mongoose.model('Offer', offerSchema,'offers');
 

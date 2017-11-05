@@ -7,7 +7,7 @@ var extraSchema = Schema ({
     first_name: String,
     email: String,
 
-});
+},{ collection: 'extras' });
 
 
 var Extra = mongoose.model('Extra', extraSchema,'extras');

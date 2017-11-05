@@ -14,20 +14,35 @@ block content
                                         th NameEvenement
                                         th Last name
                                         th First name
-                                        th role
-                                        th etat
+                                        th Role
+                                        th Etat
+                                        th Update
                                 div(class='6u 12u$(mobile)')
                                     tr
                                     each candidacyTab, i in candidacy
                                         tr
                                             td
-                                                =candidacyTab.offer.nameEvenement
+                                                each offer in candidacyTab.offer
+                                                    =offer.nameEvenement
                                             td
-                                                =candidacyTab.extra.last_name
+                                                each extra in candidacyTab.extra
+                                                    =extra.last_name
                                             td
-                                                =candidacyTab.extra.first_name
+                                                each extra in candidacyTab.extra
+                                                    =extra.first_name
                                             td
-                                                =candidacyTab.offer.role
+                                                each offer in candidacyTab.offer
+                                                    =offer.role
                                             td
-                                                =candidacyTab.etat
+                                                form(action="../candidacy/update/" + candidacyTab._id, method="post")
+                                                    select(name="etat")
+                                                        option(value = candidacyTab.etat) 
+                                                            = candidacyTab.etat
+                                                        each val in ['Waiting','Accepted','Refuse','Retained','Completed']
+                                                            if val != candidacyTab.etat
+                                                                option(value = val) 
+                                                                    =val   
+                                                    input(type='submit' value="✎" style="left:165px; bottom:63px") 
                     footer
+
+

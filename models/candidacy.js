@@ -2,10 +2,13 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var candidacySchema = Schema ({
-    etat : {type : String , default: 'en attente'},
-    extra :{type:Schema.Types.ObjectId, ref : 'extras'},
-    offer :{type:Schema.Types.ObjectId, ref : 'offers'}
-});
+    etat : {type : String , default: 'Waiting'},
+    idExtra :{type:Schema.Types.ObjectId, ref : 'extras'},
+    idOffer :{type:Schema.Types.ObjectId, ref : 'offers'}
+},{ collection: 'candidacys' });
+
+
+
 
 var Candidacy = mongoose.model('Candidacy', candidacySchema,'candidacys');
 
