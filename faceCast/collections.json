@@ -1,0 +1,50 @@
+// faceCast db 
+//---extras
+//---offers
+//---candidacy
+
+
+//////////////////////////////// extras collection   ///////////////////////////////////
+
+/* 1 */
+{
+    "_id" : ObjectId("59f1dbd830e2ea92834cc568"),
+    "last_name" : "Wicket",
+    "first_name" : "Harry",
+    "email" : "Harry.wicket@usMail.com"
+}
+
+
+
+//////////////////////////////// offers collection   ///////////////////////////////////
+
+/* 1 */
+{
+    "_id" : ObjectId("59fed81b069a78003b0bc631"),
+    "nameEvenement" : "Gary Movie",
+    "type" : "Spectacle",
+    "dateBegin" : "2018-01-25",
+    "numberDay" : 15,
+    "numberExtra" : 5,
+    "role" : "Plombier",
+    "__v" : 0
+}
+
+//////////////////////////////// candidacy collection   ///////////////////////////////////
+
+/* 1 */
+{
+    "_id" : ObjectId("59ff4e2f0b703667311e80c1"),
+    "etat" : "Waiting",
+    "idExtra" : ObjectId("59f1dbd830e2ea92834cc568"),
+    "idOffer" : ObjectId("59fed81b069a78003b0bc631")
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5a00876819d6d9006eb00fb0"),
+    "idOffer" : ObjectId("59fed81b069a78003b0bc631"),
+    "idExtra" : ObjectId("59f1dbd830e2ea92834cc568"),
+    "etat" : "Waiting",
+    "__v" : 0
+}

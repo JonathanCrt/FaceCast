@@ -66,28 +66,4 @@ router.get('/delete/:id', function (req, res, next) {
 
 });
 
-/* router.post('/delete/:id', function (req, res, next) {
-    var db = req.db;
-    var getId = req.body.id;
-    var collection = db.get('offers');
-    var objectId = new mongo.ObjectID(getId);
-    collection.remove({
-        _id: objectId
-    }, function (err, doc) {
-        if (err) {
-            res.send("Pas glop !");
-        } else {
-            res.redirect("/offer");
-        }
-    });
-}); */
-
-
-
-
-
-
-
-
-
 module.exports = router;
